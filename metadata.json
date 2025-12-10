@@ -1,0 +1,5 @@
+{
+  "name": "TimeTacToe",
+  "description": "A dynamic Tic-Tac-Toe variant where marks expire after a set time, creating a fast-paced strategy game.",
+  "requestFramePermissions": []
+}
