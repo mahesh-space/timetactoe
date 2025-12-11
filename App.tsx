@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Board from './components/Board';
-import { IconClock, IconRefresh, IconSettings, IconTrophy } from './components/Icon';
+import { IconClock, IconRefresh, IconSettings, IconTrophy, IconInstagram } from './components/Icon';
 import { CellState, Player, WinState, GameSettings } from './types';
 import { WINNING_PATTERNS, DEFAULT_DURATION_SECONDS } from './constants';
 import { soundManager } from './utils/SoundManager';
@@ -247,6 +247,23 @@ const App: React.FC = () => {
                 <span>Initialize</span>
             </div>
           </button>
+        </div>
+
+        {/* Credit */}
+        <div className="flex justify-center pt-8 pb-4">
+          <div className="liquid-glass px-6 py-3 rounded-full animate-fade-in flex items-center gap-3">
+            <p className="text-xs font-light tracking-wide text-white/60">
+              Crafted with <span className="text-red-400 animate-pulse">♥</span> by <span className="text-white/80 font-medium">MG Jiwana</span>
+            </p>
+            <a 
+              href="https://www.instagram.com/mgjiwana.dev?igsh=MXR5aTJpam5ueGhzcg==" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/60 hover:text-white/90 transition-colors duration-300 hover:scale-110 transform"
+            >
+              <IconInstagram className="w-4 h-4" />
+            </a>
+          </div>
         </div>
         
       </div>
